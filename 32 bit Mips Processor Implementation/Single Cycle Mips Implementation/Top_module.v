@@ -134,9 +134,8 @@ integer i;
 always@(posedge clk or posedge rst)
 begin
 if(rst) begin
-for(i=0;i<32;i=i+1) registers[i]<=0;
-registers[1]<=10;
-registers[2]<=5;
+for(i=0;i<32;i=i+1) 
+registers[i]<=0;
 end
 else if(regwrite)
 registers[rd]<=write_in;
