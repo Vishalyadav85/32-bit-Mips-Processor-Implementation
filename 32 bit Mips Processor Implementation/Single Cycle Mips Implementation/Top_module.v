@@ -156,6 +156,7 @@ case(control_out)
 3'b010: result=a+b;
 3'b110: result=a-b;
 3'b111: result=(a<b);
+default: result = 32'b0;
 endcase
 zero = (result==0);
 end
