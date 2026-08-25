@@ -116,13 +116,7 @@ initial begin
     // simulation time
     #400;
 
-    //==========================================================
-    // RESULTS
-    //==========================================================
-    $display("\n========================================");
-    $display("      MIPS PIPELINE SIMULATION RESULTS");
-    $display("========================================");
-
+   
     $display("\n--- Arithmetic ---");
     $display("Reg[1]  : %d", uut.RF.internal_regs[1]);
     $display("Reg[6]  : %d", uut.RF.internal_regs[6]);
